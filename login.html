@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-admissions-guide-picture-image_264052.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input:not(#toefl, #ielts, #agree),
+    select {
+        width: 98%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <h1>Form</h1>
+    <form id="registrationForm" autocomplete="off">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Srilanka">Srilanka</option>
+            <option value="United Kingdom">England</option>
+            <option value="Pakisthan">Pakisthan</option>
+            <option value="South Africa">South Africa</option>
+        </select>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <button type="submit">Submit</button>
+        <div class="terms-and-conditions">
+            <p>By submitting this form, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy
+                    Policy</a>.</p>
+        </div>
+    </form>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const nameInput = document.getElementById('name');
+            const name = nameInput.value.trim();
+            if (!/^[A-Za-z0-9\s]+$/.test(name)) {
+                alert('Please enter a valid name with alphanumeric characters only.');
+                nameInput.focus();
+                return;
+            }
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value.trim();
+            if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(email)) {
+                alert('Please enter a valid email address.');
+                emailInput.focus();
+                return;
+            }
+            const countryInput = document.getElementById('country');
+            const country = countryInput.value;
+            const phoneInput = document.getElementById('phone');
+            const phone = phoneInput.value.trim();
+
+            const phonePatterns = {
+                'Australia': /^\d{10}$/,
+                'New Zealand': /^\d{10}$/,
+                'Srilanka': /^\d{10}$/,
+                'England': /^\d{10}$/,
+                'India': /^\d{10}$/,
+                'Pakisthan': /^\d{10}$/,
+                'South Africa': /^\d{10}$/,
+            };
+
+            const pattern = phonePatterns[country];
+            if (!pattern || !pattern.test(phone)) {
+                alert('Please enter a valid phone number for the selected country.');
+                phoneInput.focus();
+                return;
+            }
+
+            alert('Form Submitted successfully.');
+        });
+
+    </script>
+</body>
+
+</html>

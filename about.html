@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+</head>
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    header h1 {
+        font-size: 36px;
+        color: #333;
+        margin-top: 0;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    section {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .hero-info {
+        padding: 20px;
+    }
+    .hero-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    max-width: 300px; 
+    max-height: 200px; 
+}
+.hero-info img:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+
+
+    .hero-info p {
+        padding: 20px 0;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+    @media screen and (max-width: 768px) {
+        section {
+            width: 100%;
+        }
+    }
+
+    .rc { background-color: rgb(144, 238, 144); }
+    .mb { background-color: rgb(173, 216, 230); }
+    .ntr { background-color: rgb(240, 230, 140); }
+    .aa { background-color: rgb(255, 192, 203); }
+    .pk { background-color: rgb(173, 255, 47); }
+    .darling { background-color: rgb(255, 228, 181); }
+    .tablink {
+        background-color: #1b1a1a;
+        color: white;
+        float: left;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+    .tabcontent {
+    color: white;
+    padding: 100px 20px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); 
+    font-size: 20px; 
+    line-height: 1.6; 
+    }
+
+    #Topsix {
+        background-color: rgb(255, 145, 0);
+    }
+
+    #Mid{
+        background-color: rgb(209, 19, 19);
+    }
+
+    #Upcoming {
+        background-color: rgb(50, 207, 207);
+    }
+
+    #Quick_Facts {
+        background-color: rgb(0, 255, 38);
+    }
+</style>
+
+<body>
+    <button class="tablink" onclick="openPage('Topsix', this, 'orange')" id="defaultOpen">TOP SIX</button>
+    <button class="tablink" onclick="openPage('Mid', this, 'red')">Medium Range</button>
+    <button class="tablink" onclick="openPage('Upcoming', this, 'skyblue')">Upcoming Heroes</button>
+    <button class="tablink" onclick="openPage('Quick_Facts', this, 'green')">Quick Facts</button>
+
+    <div id="Topsix" class="tabcontent">
+        <header>
+            <h1>Tollywood Heroes</h1>
+        </header>
+        <main>
+            <section class="rc">
+                <h2>Ram Charan</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/Ram_Charan" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\ramcharan.jpeg"></a>
+                    <p> Ram Charan is a prominent actor, producer, and entrepreneur in the Telugu film industry. Born on March 27, 1985, in Chennai, Tamil Nadu, India, Ram Charan is the son of veteran actor Chiranjeevi. He made his acting debut with the film "Chirutha" and quickly rose to fame with his remarkable performances and charismatic persona. Ram Charan is known for his dedication to his craft and his ability to deliver blockbuster hits consistently.</p>
+                </div>
+            </section>
+            
+            <section class="mb">
+                <h2>Mahesh Babu</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/Mahesh_Babu" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\maheshbabu.jpg"></a>
+                    <p>Mahesh Babu, often referred to as the "Prince of Tollywood," is one of the most celebrated actors in the Telugu film industry. Born on August 9, 1975, in Chennai, Tamil Nadu, India, Mahesh Babu made his acting debut as a child artist and later rose to prominence with his remarkable performances in various Telugu films. He is known for his versatility, charm, and impeccable acting skills, which have earned him a massive fan following across the globe.</p>
+                </div>
+            </section>
+            <section class="ntr">
+                <h2>NTR</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/N._T._Rama_Rao_Jr." target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\ntr.webp"></a>
+                    <p>Nandamuri Taraka Rama Rao Jr., popularly known as Junior NTR or Tarak, is a versatile actor in Telugu cinema. Born on May 20, 1983, in Hyderabad, Telangana, India, NTR comes from a prestigious film family with a legacy spanning generations. He is known for his intense performances, exceptional dialogue delivery, and charismatic screen presence. Junior NTR has carved a niche for himself in the industry with his diverse roles and acting prowess.</p>
+                </div>
+            </section>
+            <section class="aa">
+                <h2>Allu Arjun</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/Allu_Arjun" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\aa.jpg"></a>
+                    <p> Allu Arjun, fondly called the "Stylish Star," is one of the leading actors in Telugu cinema. Born on April 8, 1983, in Chennai, Tamil Nadu, India, Allu Arjun comes from a prestigious film family. He gained recognition for his unique dance style, energy-packed performances, and ability to portray a wide range of characters with ease. Allu Arjun's popularity extends beyond the Telugu-speaking states, making him a well-known name in the Indian film industry.</p>
+                </div>
+            </section>
+            <section class="pk">
+                <h2>Pawan Kalyan</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/Pawan_Kalyan" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\pk.avif"></a>
+                    <p>Pawan Kalyan, also known as Power Star, is a prominent figure in the Telugu film industry. Born on September 2, 1971, in Bapatla, Andhra Pradesh, India, Pawan Kalyan is not only an actor but also a filmmaker, screenwriter, and politician. He garnered immense popularity for his dynamic on-screen presence, powerful dialog delivery, and charismatic personality. Apart from his contributions to cinema, Pawan Kalyan is known for his involvement in social and political activities.</p>
+                </div>
+            </section>
+            <section class="darling">
+                <h2>Prabhas</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/Prabhas" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\prabhas.jpg"></a>
+                    <p>Prabhas, best known for his role as Baahubali, is a highly acclaimed actor in the Indian film industry. Born on October 23, 1979, in Chennai, Tamil Nadu, India, Prabhas gained nationwide recognition and international fame for his portrayal of the titular character in the Baahubali film series. His dedication, commitment, and hard work in bringing such iconic characters to life have earned him immense admiration from audiences and critics alike.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+
+    <div id="Mid" class="tabcontent">
+        <h3>Medium Range Heroes</h3>
+        <main>
+        <section class="rc">
+            <h2>Nani</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Nani_(actor)" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\nani.jpg" alt="Hero Image"></a>
+                <p>Nani, whose real name is Naveen Babu Ghanta, is a popular actor in Telugu cinema.
+                    He made his debut with the film "Ashta Chamma" and gained recognition for his natural acting skills.
+                    Nani is known for his versatility and has delivered several critically acclaimed performances in films like "Eega," "Bhale Bhale Magadivoy," and "Jersey."
+                    Apart from acting, Nani has also worked as an assistant director and producer.</p>
+            </div>
+        </section>
+        <section class="mb">
+            <h2>Vijay Devarakonda</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Vijay_Deverakonda" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\vd.png" alt="Hero Image"></a>
+                <p>Vijay Devarakonda is best known for his role in the film "Arjun Reddy," which earned him widespread acclaim.
+                    He has quickly risen to fame with his unconventional choices of roles and intense performances.
+                    Vijay is recognized for his charismatic screen presence and is considered one of the most promising actors in the Telugu film industry.
+                    Some of his other notable films include "Geetha Govindam" and "Dear Comrade."</p>
+            </div>
+        </section>
+        <section class="ntr">
+            <h2>Ram Pothineni</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Ram_Pothineni" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\rapo.webp" alt="Hero Image"></a>
+                <p>Ram Pothineni, commonly referred to as Energetic Star, is a Telugu actor known for his energetic performances and youthful charm.
+                    He made his debut with the film "Devadasu" and has since appeared in numerous successful films.
+                    Ram is known for his versatility in portraying different roles, ranging from romantic to action-packed characters.
+                    Some of his popular films include "Ready," "Nenu Sailaja," and "Hello Guru Prema Kosame."</p>
+            </div>
+        </section>
+        <section class="aa">
+            <h2>Vishwaksen</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Vishwak_Sen" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\vishwa.jpg" alt="Hero Image"></a>
+                <p>Vishwaksen Naidu is an Indian actor and director primarily working in Telugu cinema.
+                    He gained recognition for his performance in the independent film "Falaknuma Das," which he also directed.
+                    Known for his unconventional roles and bold choices, Vishwaksen has carved a niche for himself in the industry.
+                    Apart from acting, he has also ventured into filmmaking and has garnered praise for his directorial debut.</p>
+            </div>
+        </section>
+        <section class="pk">
+            <h2>Rana Dagguabati</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Rana_Daggubati" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\rana.jpeg" alt="Hero Image"></a>
+                <p>Rana Daggubati is an Indian actor, producer, and entrepreneur known for his work in Telugu, Tamil, and Hindi cinema.
+                    He gained widespread acclaim for his portrayal of the antagonist Bhallaladeva in the "Baahubali" series.
+                    Rana has showcased his versatility by taking on diverse roles in films like "Leader," "Ghazi," and "Nene Raju Nene Mantri."
+                    Apart from acting, he is actively involved in film production and various other business ventures.</p>
+            </div>
+        </section>
+        <section class="darling">
+            <h2>Sharwanand</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Sharwanand" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\sharwa.jpg" alt="Hero Image"></a>
+                <p>Sharwanand Myneni is a Telugu actor known for his work in both mainstream and parallel cinema.
+                    He made his debut with the film "5va Tareeku" and has since appeared in numerous commercially successful films.
+                    Sharwanand is known for his subtle yet impactful performances and has garnered critical acclaim for his roles.
+                    Some of his notable films include "Prasthanam," "Run Raja Run," and "Mahanubhavudu."</p>
+            </div>
+        </section>
+        <section class="rc">
+            <h2>Naga Chaitanya</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Naga_Chaitanya" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\nc.webp" alt="Hero Image"></a>
+                <p>Naga Chaitanya Akkineni is an Indian actor who primarily works in Telugu cinema.
+                    He belongs to the prestigious Akkineni family and made his debut with the film "Josh."
+                    Naga Chaitanya has showcased his acting prowess in films like "Ye Maaya Chesave," "Manam," and "Premam."
+                    He is known for his charming screen presence and has established himself as a bankable actor in the industry.</p>
+            </div>
+        </section>
+        <section class="mb">
+            <h2>Nikhil</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Nikhil_Siddhartha" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\nikhil.jpeg" alt="Hero Image"></a>
+                <p>Nikhil Siddhartha is an Indian actor known for his work predominantly in Telugu cinema.
+                    He made his acting debut with the film "Happy Days" and gained recognition for his performance.
+                    Nikhil is known for his versatility and has portrayed a variety of roles across different genres.
+                    Some of his notable films include "Swamy Ra Ra," "Karthikeya," and "Ekkadiki Pothavu Chinnavada."</p>
+            </div>
+        </section>
+        <section class="aa">
+            <h2>Nithin</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Nithiin" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\nithin.jpeg" alt="Hero Image"></a>
+                <p>Nithin Kumar Reddy, known mononymously as Nithin, is a Telugu actor and producer.
+                    He made his debut with the film "Jayam" and has since appeared in numerous successful films.
+                    Nithin is known for his boy-next-door charm and has garnered a significant fan following.
+                    Some of his popular films include "Ishq," "Gunde Jaari Gallanthayyinde," and "A Aa."</p>
+            </div>
+        </section>
+        <section class="darling">
+            <h2>Sai Dharam Tej</h2>
+            <div class="hero-info">
+                <a href="https://en.wikipedia.org/wiki/Sai_Durgha_Tej" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\saidharam.jpg" alt="Hero Image"></a>
+                <p>Sai Dharam Tej is an Indian actor who primarily works in Telugu cinema.
+                    He belongs to the prestigious Chiranjeevi family and made his debut with the film "Pilla Nuvvu Leni Jeevitham."
+                    Sai Dharam Tej is known for his energetic performances and has established himself as a promising actor in the industry.
+                    Some of his notable films include "Subramanyam for Sale," "Supreme," and "Chitralahari."</p>
+            </div>
+        </section>
+    </main>
+    </div>  
+
+    <div id="Upcoming" class="tabcontent">
+        <header>
+            <h1>Upcoming Heroes</h1>
+        </header>
+        <main>
+            <section class="rc">
+                <h2>Teja Sajja</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/Teja_Sajja" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\teja.jpeg"></a>
+                    <p> Ram Charan is a prominent actor, producer, and entrepreneur in the Telugu film industry. Born on March 27, 1985, in Chennai, Tamil Nadu, India, Ram Charan is the son of veteran actor Chiranjeevi. He made his acting debut with the film "Chirutha" and quickly rose to fame with his remarkable performances and charismatic persona. Ram Charan is known for his dedication to his craft and his ability to deliver blockbuster hits consistently.</p>
+                </div>
+            </section>
+            
+            <section class="mb">
+                <h2>Naveen Polishetty</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/Naveen_Polishetty" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\naveen.jpg"></a>
+                    <p>Mahesh Babu, often referred to as the "Prince of Tollywood," is one of the most celebrated actors in the Telugu film industry. Born on August 9, 1975, in Chennai, Tamil Nadu, India, Mahesh Babu made his acting debut as a child artist and later rose to prominence with his remarkable performances in various Telugu films. He is known for his versatility, charm, and impeccable acting skills, which have earned him a massive fan following across the globe.</p>
+                </div>
+            </section>
+            <section class="ntr">
+                <h2>Sidhu Jonnalagadda</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/N._T._Rama_Rao_Jr." target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\siddhu.jpeg"></a>
+                    <p>Nandamuri Taraka Rama Rao Jr., popularly known as Junior NTR or Tarak, is a versatile actor in Telugu cinema. Born on May 20, 1983, in Hyderabad, Telangana, India, NTR comes from a prestigious film family with a legacy spanning generations. He is known for his intense performances, exceptional dialogue delivery, and charismatic screen presence. Junior NTR has carved a niche for himself in the industry with his diverse roles and acting prowess.</p>
+                </div>
+            </section>
+            <section class="aa">
+                <h2>Adivi sesh</h2>
+                <div class="hero-info">
+                    <a href="https://en.wikipedia.org/wiki/Allu_Arjun" target="_blank"><img src="C:\Users\ChittuBunny\Downloads\Mini_project\images\Adivi-1.webp"></a>
+                    <p> Allu Arjun, fondly called the "Stylish Star," is one of the leading actors in Telugu cinema. Born on April 8, 1983, in Chennai, Tamil Nadu, India, Allu Arjun comes from a prestigious film family. He gained recognition for his unique dance style, energy-packed performances, and ability to portray a wide range of characters with ease. Allu Arjun's popularity extends beyond the Telugu-speaking states, making him a well-known name in the Indian film industry.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="Quick_Facts" class="tabcontent">
+        <h3>Quick Facts</h3>
+        <ul>
+            <li>Full Name: Harideep Repakula</li>
+            <li>DOB(date of birth): 9th june 2004</li>
+            <li>Degree Pursuing: Bachelor of Technology (B.Tech) in Computer Science Engineering (CSE) Core</li>
+            <li>Passion: Technology, continuous learning, coding challenges</li>
+            <li>Academic Focus: Programming languages, data structures, algorithms, computer architecture, software engineering, networking, databases, artificial intelligence</li>
+            <li>Extracurricular Activities: Coding competitions, hackathons, research projects</li>
+            <li>Social Media Presence: Active engagement in tech communities</li>
+            <li>Motto: Lifelong learning and exploration in the dynamic field of technology</li>
+        </ul>
+    </div>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+            document.body.style.backgroundColor = color;
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+    
+</body>
+</html>

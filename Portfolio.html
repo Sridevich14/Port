@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repakula Harideep - Portfolio</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgb(225, 16, 194), rgb(24, 228, 31), rgb(18, 33, 200));
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite; 
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+        header {
+            background-color: rgb(44, 130, 201);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: rgb(82, 190, 128); /* Green */
+            color: #fff;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(64, 148, 100); /* Dark green on hover */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:black;
+            color: hotpink;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+        .project a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .project h2{
+            color: darkcyan;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: rgb(44, 130, 201); /* Blue */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="project">
+            <h2>Project 1: Full Stack Development.</h2>
+            <p>Description: Includes key features and utilized technologies.</p>
+            <p>Skills Used: HTML, CSS, JavaScript, React, etc.</p>
+            <a href="https://www.geeksforgeeks.org/what-is-full-stack-development/#:~:text=It%20refers%20to%20the%20server,%2C%20back%20end%2C%20and%20database." target="_blank">Learn More</a>
+        </div>
+
+        <div class="project">
+            <h2>Project 2: Data Science</h2>
+            <p>Description: Highlights project features and technologies.</p>
+            <p>Skills Used: Programming Skills,Statistical and Mathematical Knowledge, Machine Learning etc..</p>
+            <a href="https://towardsdatascience.com/" target="_blank">Learn More</a>
+        </div>
+
+        <div class="project">
+            <h2>Project 3: Internt Of Things</h2>
+            <p>Description:  Features and technologies employed in the project.</p>
+            <p>Skills Used: Embedded Systems, Networking and Communication, Python, Django, etc.</p>
+            <a href="https://cubettech.com/resources/blog/how-to-use-web-development-along-with-iot-using-the-future-technology/" target="_blank">Learn More</a>
+        </div>
+    </main>    
+    <footer>
+        <p>&copy; 2024 Repakula Harideep</p>
+    </footer>
+</body>
+</html>

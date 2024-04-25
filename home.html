@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An introduction about me</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<style>
+    body {
+        border-color: black;
+        background-color: white;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        background: linear-gradient(45deg, #ff33f8, #FFFFFF, #169ccd);
+        background-attachment: fixed;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    nav {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 10px;
+        align-items: center;
+    }
+
+    nav ul li a {
+        background: black;
+        padding: 10px 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        display: inline-block;
+        margin: 30px 0;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+    }
+
+    a {
+        margin-left: 10%;
+    }
+
+    nav ul li a:hover {
+        color: red;
+        background-color: #000080;
+        border-radius: 25px;
+    }
+
+    .details {
+        margin-left: 10%;
+        margin-top: 15%;
+    }
+
+    .details h1 {
+        font-size: 50px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .x2 {
+        margin-left: 10%;
+    }
+
+    span {
+        color: blue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'LucidaSans', Arial, sans-serif;
+    }
+
+    .details a:hover {
+        background-color: #000080;
+        border-radius: 15px;
+    }
+
+    .photo {
+        border-radius: 500px;
+        float: right;
+        margin-right: 200px;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        border: 5px solid #000080;
+        background-color: #f0f0f0;
+    }
+
+    .mySlides {
+        display: none;
+        border: 5px solid #000080;
+        box-shadow: 5px 5px 5px #888888;
+    }
+
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    .icon {
+        margin-top: 10px;
+        margin-left: 10%;
+        margin-right: 5%;
+        display: inline-block;
+        position: relative;
+    }
+
+    .icon img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .icon:hover img {
+        transform: scale(1.1);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #userInput {
+        padding: 10px;
+        width: 70%;
+        margin-right: 10px;
+        margin-left: 10%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #08c95c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #000066;
+    }
+
+    #chatOutput {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #chatOutput p {
+        margin: 10px 0;
+    }
+
+    #chatOutput strong {
+        color: #000080;
+    }
+
+    #counter {
+        color: #ff0000;
+        font-weight: bold;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="skills.html" target="_blank">Skills</a></li>
+                <li><a href="Portfolio.html"  target="_blank">Portfolio</a></li>
+                <li><a href="testmonials.html" target="_blank">Testmonials</a></li>
+                <li><a href="Resume.html" target="_blank">Resume</a></li>
+                <li><a href="login.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        <img class="photo" src="C:\Users\ChittuBunny\Downloads\Hari\images\main.png" height="350" width="350">
+        <div class="details">
+            <h1>Hello, Welcome to <span>my web page</span></h1>
+            <h2>This official website shows about me and my capabilities in technical knowledge.
+            </h2>
+        </div><br>
+        <br>
+        <h2 class="x2">"Stay in the loop and if you want to know more about me.Follow me on Linked in and Instagram for
+            exclusive content, updates, and more. Let's connect!"</h2>
+
+        <div class="icon">
+            <a href="https://www.instagram.com/harideeprepakula/?next=%2F" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\instagram.jpg">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="https://www.facebook.com/harideep.repakula" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\facebook.png">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="https://twitter.com/Haridee12076058" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\twitter.png">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/harideep-repakula-629838283/" target="_blank">
+                <img src="C:\Users\ChittuBunny\Downloads\Hari\images\linked.webp">
+            </a>
+        </div>
+        <br>
+        <h2 class="x2">You can ask anything about me here</h2>
+        <input type="text" id="userInput" placeholder="Question Please">
+        <button onclick="askChatBot()">Submit</button>
+        <div id="chatOutput"></div>
+        <div>
+            <p id="viewCount">Number of Views got by the website=<span id="counter">9</span></p>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+            function chatBot(userInput) {
+                userInput = userInput.toLowerCase();
+                if (userInput.includes("intro")) {
+                    return " Harideep Repakula, a diligent student pursuing a Bachelor of Technology (B.Tech) in Computer Science Engineering (CSE) Core, exemplifies a blend of academic excellence, passion for technology, and a drive for continuous learning. Hailing from a background rooted in the realm of technology, Harideep's academic journey at his institution, which focuses on the core principles of computer science and engineering, reflects his commitment to mastering the intricacies of this dynamic field.";
+                } else if (userInput.includes("lifestyle")) {
+                    return "Harideep Repakula is known for his disciplined and technology-oriented lifestyle. He follows a strict routine and is passionate about exploring new technologies, which he often shares on social media.";
+                } else if (userInput.includes("description")) {
+                    return "Harideep Repakula is a diligent student pursuing a Bachelor of Technology (B.Tech) in Computer Science Engineering (CSE) Core. He is passionate about technology and dedicated to mastering the intricacies of the dynamic field of computer science and engineering.";
+                } else if (userInput.includes("quickfacts")) {
+                    return "Harideep Repakula is pursuing a Bachelor of Technology (B.Tech) in Computer Science Engineering (CSE) Core. His passion lies in technology, continuous learning, and engaging in coding challenges. His academic focus encompasses a wide range of subjects including programming languages, data structures, algorithms, computer architecture, software engineering, networking, databases, and artificial intelligence. Outside of academics, he actively participates in extracurricular activities such as coding competitions, hackathons, and research projects. Harideep also maintains an active presence in tech communities on social media, embodying his motto of lifelong learning and exploration in the dynamic field of technology.";
+                }
+
+                else if (userInput.includes("skills")) {
+                    return "He demonstrates proficiency in coding languages like HTML/CSS and JavaScript, alongside expertise in frameworks and libraries, version control systems, testing methodologies, design principles, and prioritizes web performance and security.";
+                } else if (userInput.includes("porttfolio")) {
+                    return "I has a diverse skill set demonstrated across various projects. In Full Stack Development, they utilized HTML, CSS, JavaScript, and React to create comprehensive solutions. Their Data Science project showcased proficiency in programming, statistical and mathematical knowledge, and machine learning techniques. Lastly, their Internet of Things endeavor highlighted expertise in embedded systems, networking and communication protocols, utilizing Python and Django for implementation.";
+                }
+
+                else if (userInput.includes("testmonials")) {
+                    return "Repakula Harideep's impact has been transformative across diverse projects. At Google, his web development expertise elevated user experience, yielding a 20% surge in engagement. Similarly, at Ekart Corporation, his proficiency in embedded systems and sensor integration facilitated real-time monitoring, enhancing operational efficiency by 30%.";
+                }
+                else if (userInput.includes("born")) {
+                    return "I was born on 9th june 2004 in Andhra Pradesh,India.";
+                }
+                else {
+                    return "I'm sorry, I don't have information on that topic. Please ask about Introduction, Lifestyle, Description, or Quick Facts.";
+                }
+            }
+            function askChatBot() {
+                const userInput = document.getElementById("userInput").value;
+                const botReply = chatBot(userInput);
+                const chatOutput = document.getElementById("chatOutput");
+                chatOutput.innerHTML = `<p><strong>User:</strong> ${userInput}</p><p><strong>Chatbot:</strong> ${botReply}</p>`;
+            }
+            let viewCount = localStorage.getItem('viewCount') || 0;
+            viewCount = parseInt(viewCount);
+            viewCount++;
+            localStorage.setItem('viewCount', viewCount);
+            document.getElementById('counter').innerText = viewCount;
+        </script>
+        <p>&copy; 2024 Harideep repakula</p>
+    </div>
+</body>
+
+</html>

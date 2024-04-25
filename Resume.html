@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repakula Harideep - Resume</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume {
+    margin-bottom: 20px;
+}
+
+a.download-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a.download-link:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <p>Download my resume:</p>
+        <a href="C:\Users\ChittuBunny\Downloads\harresume.pdf" download="Repakula_Harideep_Resume.pdf" class="download-link">Download PDF</a>
+    </main>    
+    <footer>
+        <p>&copy; 2024 Repakula Harideep</p>
+    </footer>
+
+    <script>
+        const downloadLink = document.querySelector('.download-link');
+        downloadLink.addEventListener('click', function(event) {
+            const confirmDownload = confirm('Are you sure you want to download the resume?');
+            if (!confirmDownload) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

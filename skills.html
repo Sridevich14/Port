@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harideep Repakula's Skills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+ /* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(16, 16, 21); /* Light lavender */
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: rgb(227, 234, 238); /* Dark blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+section img {
+  display: block;
+  margin: 0 auto 20px; /* Center the image and add some space below */
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  border-radius: 5px; /* Add a slight border radius for a rounded appearance */
+  max-height: 150px; /* Set maximum height for the images */
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+  color: rgb(44, 62, 80); /* Dark grayish blue */
+}
+
+p {
+  color: rgb(100, 100, 100); /* Gray */
+  font-size: 16px; /* Increased font size */
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+}
+
+/* Additional Styles */
+section:nth-child(odd) {
+  background-color: rgb(253, 203, 110); /* Peach */
+}
+
+section:nth-child(3n+1) {
+  background-color: rgb(142, 68, 173); /* Purple */
+}
+
+section:nth-child(3n+2) {
+  background-color: rgb(41, 128, 185); /* Blue */
+}
+
+section:hover {
+  background-color: rgb(241, 196, 15); /* Yellow on hover */
+}
+
+.expanded {
+  background-color: rgb(236, 240, 241); /* Light gray when expanded */
+}
+
+
+</style>
+<body>
+  <header>
+    <h1>Harideep Repakula's Skills</h1>
+  </header>
+
+  <main>
+    <section id="html-css">
+      <h2>HTML/CSS</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\html&css.jpg">
+      <p>I was proficient in HTML and CSS, the fundamental languages for building the structure and layout of web pages. I has extensive experience in creating responsive and visually appealing websites using HTML5 and CSS3.</p>
+    </section>
+
+    <section id="javascript">
+      <h2>JavaScript</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\javascript.jpg">
+      <p>I has a strong command of JavaScript, enabling him to implement complex features on web pages. I was skilled in using JavaScript frameworks like React and Vue.js to build interactive and dynamic web applications.</p>
+    </section>
+
+    <section id="frameworks">
+      <h2>Frameworks and Libraries</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\framework.jpg">
+      <p>I am familiar with popular front-end and back-end frameworks and libraries, including React, Angular, and Express.js. I leverages these tools to streamline development and build scalable web applications efficiently.</p>
+    </section>
+
+    <section id="version-control">
+      <h2>Version Control</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\version_ctrl.jpg">
+      <p>I am proficient in version control tools such as Git, enabling him to manage code effectively and collaborate with other developers. I follows best practices for branching, merging, and maintaining code repositories.</p>
+    </section>
+
+    <section id="testing">
+      <h2>Testing</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\testing.png">
+      <p>I ensures thorough testing of websites and applications for bugs and errors. I utilizes testing frameworks like Jest and Mocha to implement unit tests and integration tests, ensuring high-quality software delivery.</p>
+    </section>
+
+    <section id="design-principles">
+      <h2>Design Principles</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\design.png">
+      <p>I understands design principles and user experience (UX) concepts, which are essential for creating visually appealing and user-friendly websites.I collaborates closely with designers to implement effective design solutions.</p>
+    </section>
+
+    <section id="web-performance">
+      <h2>Web Performance</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\web.png">
+      <p>I optimizes website performance using techniques such as image optimization, code minification, and server-side caching. I follows industry best practices to improve loading times and enhance user experience.</p>
+    </section>
+
+    <section id="security">
+      <h2>Security</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\security.jpeg">
+      <p>I prioritizes security in website and application development, implementing measures to protect against cyber threats and vulnerabilities.I follows security standards and practices to ensure data integrity and user privacy.</p>
+    </section>
+
+    <section id="collaboration">
+      <h2>Collaboration</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\collaborating.png">
+      <p>I effectively collaborates with project managers, designers, and other developers to deliver successful projects.I communicates clearly, participates in team discussions, and contributes to project planning and execution.</p>
+    </section>
+
+    <section id="continuous-learning">
+      <h2>Continuous Learning</h2>
+      <img src="C:\Users\ChittuBunny\Downloads\Hari\images\continous.jpeg">
+      <p>I was committed to continuous learning and staying up-to-date with the latest technologies and trends in web development. I actively seeks opportunities for professional development and self-improvement.</p>
+    </section>
+</main>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section");
+
+  sections.forEach(section => {
+    section.addEventListener("click", function() {
+      this.classList.toggle("expanded");
+    });
+  });
+});
+
+  </script>
+</body>
+</html>
